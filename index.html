@@ -71,10 +71,10 @@
         window.onload = function () {
             // List of allowed domains
             const allowedDomains = [
-                '',
-                '',
-                '',
-                ''
+                'https://talhas.crickett.rf.gd/',
+                'https://wizardfc.official.rf.gd/',
+                'https://bhaichurikorbenna.servert.rf.gd/',
+                'https://wizardfcofficial.rf.gd/'
             ];
 
             const referrer = document.referrer;
@@ -97,19 +97,13 @@
                 }
             });
 
-            // Force desktop view based on screen width
-            let iframeURL = 'https://streamhd247.info/sourcecricket.html';
-            if (window.innerWidth < 768) { // Adjust for mobile devices
-                iframeURL += '&mode=desktop';
-            }
-
             // Load the iframe
-            iframe.src = iframeURL;
+            iframe.src = 'https://streamhd247.info/sourcecricket.html';
 
-            // Hide the footer text after 25 seconds
+            // Hide the footer text after 10 seconds
             setTimeout(function () {
                 document.querySelector('.footer-text').style.display = 'none';
-            }, 25000);
+            }, 25000); // 25 seconds delay to hide the text
         }
 
         function openTelegram() {
@@ -130,7 +124,6 @@
     </div>
 
     <iframe id="stream-iframe" sandbox="allow-same-origin allow-scripts" scrolling="no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope, picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; Idle-detection" allowfullscreen></iframe>
-
 </body>
-
+</html></body>
 </html>
